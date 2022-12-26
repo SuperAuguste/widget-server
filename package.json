@@ -1,0 +1,22 @@
+{
+  "name": "widget-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch static/css/index.scss:static/css/style.css --style compressed --no-source-map"
+  },
+  "type": "module",
+  "author": "Auguste Rame",
+  "license": "MIT",
+  "dependencies": {
+    "@twurple/api": "^5.3.0-pre.1",
+    "@twurple/auth": "^5.3.0-pre.1",
+    "@twurple/eventsub-ws": "^5.3.0-pre.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "ws": "^8.11.0"
+  }
+}
