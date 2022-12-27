@@ -26,25 +26,33 @@ html, body {
     
     padding: 40px;
 
-    width: calc(2/3 * 800px);
-    height: calc(2/3 * 600px);
+    width: 600px;
+    height: 600px;
 
     border-radius: 3px;
 
     color: white;
+    text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+    
+    // color: black;
+    // text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
 
-    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
 }
 
 .message {
-    margin-bottom: 10px;
+    margin-top: 10px;
 
-    font-size: 24px;
-    letter-spacing: -0.021em;
+    font-size: 32px;
+    letter-spacing: -0.022em;
 
     &__author {
         margin-right: 5px;
         font-weight: 900;
+    }
+
+    &__content {
+        font-weight: 600;
     }
 }
 
@@ -79,23 +87,41 @@ html, body {
     transform: translate(-50%, 0);
 
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
 
     border-radius: 10px;
 
-    padding: 20px;
+    padding: 20px 60px;
 
-    width: 600px;
+    min-width: 700px;
+    max-width: 80%;
 
-    color: white;
+    color: rgb(216, 216, 216);
     font-size: 32px;
+    font-weight: 500;
 
     transition: 1s top ease-in-out;
-    background-color: black;
+    background-color: rgb(25, 25, 25);
 
     &.shown {
         top: 50px;
     }
 }
 
+.ziguana {
+    position: absolute;
+
+    top: var(--y);
+    left: var(--x);
+    transform: rotate(calc(var(--r) + 180deg));
+
+    width: 75px;
+    opacity: 0.5;
+}
+
+.emote {
+    vertical-align: middle;
+    width: 40px;
+}
